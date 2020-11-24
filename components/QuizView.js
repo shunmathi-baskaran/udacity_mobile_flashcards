@@ -184,7 +184,7 @@ const styles =  StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        fontWeight: 400,
+        fontWeight: "400",
         padding: 5,
         margin:5
     },

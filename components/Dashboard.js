@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import { View, Text, StyleSheet, TouchableOpacity,ScrollView } from 'react-native'
+import { Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native'
 import { connect } from 'react-redux'
-import { blue, gray } from '../utils/colors'
+import { gray } from '../utils/colors'
 
 class Dashboard extends Component {
     navigateToDeckView = (deckTitle) => {
@@ -23,7 +23,7 @@ class Dashboard extends Component {
                             key={deck.title} 
                             onPress={() => this.navigateToDeckView(deck.title)}>
                             <Text style={styles.heading}>{ deck.title}</Text>
-                            <Text style={styles.text}>{(deck.questions.length > 1) ? `${deck.questions.length} cards` : `${deck.questions.length} card`}</Text>
+                            <Text style={styles.text}>{deck.questions.length > 1 ? `${deck.questions.length} cards` : `${deck.questions.length} card`}</Text>
                         </TouchableOpacity>
                     )
                 })}
@@ -60,7 +60,7 @@ const styles =  StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        fontWeight: 400,
+        fontWeight: "400",
         padding: 5,
         margin:5
     }

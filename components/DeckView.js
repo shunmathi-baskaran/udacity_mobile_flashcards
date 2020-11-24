@@ -94,7 +94,7 @@ const styles =  StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        fontWeight: 400,
+        fontWeight: "400",
         padding: 5,
         margin:5
     },
@@ -133,7 +133,7 @@ const styles =  StyleSheet.create({
         padding: 0
     },
     deleteBtnTxt: {
-        textDecorationStyle: 'underline',
+        textDecorationStyle: 'solid',
         color: blue,
         fontSize: 20
     }
