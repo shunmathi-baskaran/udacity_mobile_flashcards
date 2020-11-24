@@ -72,7 +72,7 @@ export class App extends Component {
     .then(results=> {
       this.props.dispatch(getDecks(results))
     })
-    //setLocalNotification()
+    setLocalNotification()
   }
   render() {
     return (

@@ -24,7 +24,7 @@ class DeckView extends Component {
 
     navigateToQuiz = (deckTitle) => {
         const { navigation } = this.props;
-        //clearLocalNotification().then(setLocalNotification)
+        clearLocalNotification().then(setLocalNotification)
         navigation.navigate('Quiz', {
             deckTitle
         })
