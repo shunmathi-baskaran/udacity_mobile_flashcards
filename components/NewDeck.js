@@ -24,9 +24,10 @@ class NewDeck extends Component {
         if(inputValue !== '') {
             addDeck(inputValue).then(
                 this.props.dispatch(saveDeck(inputValue))
-            ).then(() => this.setState({
+            ).then(()=> navigation.navigate('Deck', {deckTitle: inputValue}))
+            .then(() => this.setState({
                 inputValue: ''
-            })).then(()=> navigation.navigate('Home'))
+            }))
         }
         else {
             alert('Blank is not a valid value')

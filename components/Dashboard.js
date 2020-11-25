@@ -44,8 +44,7 @@ function mapStateToProps(state){
 const styles =  StyleSheet.create({
     scroll: {
         alignItems: 'center',
-        justifyContent: 'center',
-        flex: 1
+        justifyContent: 'center'
     },
     container: {
         marginVertical: 15,

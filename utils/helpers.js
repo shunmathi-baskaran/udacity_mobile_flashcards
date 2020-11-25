@@ -7,7 +7,7 @@ export const DECK_STORAGE_KEY = 'MobileFlashcards:decks'
 export const NOTIFICATION_KEY = 'MobileFlashcards:notifications'
 
 export function formatDeckDetails(results) {
-   return (results === null || results === undefined) ? setDummyData() : JSON.parse(results) 
+   return (results === null || results === undefined) ? setDummyData() : results
 }
 
 function setDummyData() {
